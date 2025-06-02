@@ -75,7 +75,6 @@ class _HabitsScreenState extends State<HabitsScreen> {
       color: Color(0xFF34C759),
       yearData: _generateSampleYearData(),
     ),
-    // … weitere Beispiel-Habits …
   ];
 
   static List<List<int>> _generateSampleYearData() {

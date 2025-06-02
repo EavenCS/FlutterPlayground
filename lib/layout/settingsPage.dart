@@ -28,7 +28,6 @@ class _SettingspageState extends State<Settingspage> {
                   children: [
                     Text("General", style: settingsHeaderStyle()),
                     const Divider(height: 20.0, thickness: 1.0),
-
                     const SizedBox(height: 10),
                     settingsListTileStyle(
                       "Profile",

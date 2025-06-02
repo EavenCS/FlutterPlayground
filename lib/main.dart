@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/layout/HabitTrackerApp.dart';
+import 'package:flutter_application_1/layout/habitPage.dart';
 import 'package:flutter_application_1/layout/quizPage.dart';
 import 'package:flutter_application_1/layout/quizResult.dart';
 import 'package:flutter_application_1/layout/settingsPage.dart';
@@ -66,7 +67,6 @@ class StartPage extends StatelessWidget {
                 },
                 child: Text("Settings"),
               ),
-              Spacer(flex: 2),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -74,8 +74,18 @@ class StartPage extends StatelessWidget {
                     MaterialPageRoute(builder: (_) => HabitTrackerApp()),
                   );
                 },
-                child: Text("Habit"),
+                child: Text("Habit Vibe MVP"),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => Habitpage()),
+                  );
+                },
+                child: Text("Habit Selfbuild"),
+              ),
+              Spacer(flex: 2),
             ],
           ),
         ),
