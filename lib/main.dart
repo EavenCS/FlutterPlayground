@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/layout/HabitTrackerApp.dart';
+import 'package:flutter_application_1/layout/businessCardsPage.dart';
 import 'package:flutter_application_1/layout/habitPage.dart';
 import 'package:flutter_application_1/layout/quizPage.dart';
 import 'package:flutter_application_1/layout/quizResult.dart';
@@ -84,6 +85,15 @@ class StartPage extends StatelessWidget {
                   );
                 },
                 child: Text("Habit Selfbuild"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => businessCardsPage()),
+                  );
+                },
+                child: Text("businessCardsPage"),
               ),
               Spacer(flex: 2),
             ],
