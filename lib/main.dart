@@ -6,8 +6,11 @@ import 'package:flutter_application_1/layout/quizPage.dart';
 import 'package:flutter_application_1/layout/quizResult.dart';
 import 'package:flutter_application_1/layout/settingsPage.dart';
 import 'package:flutter_application_1/layout/widgets.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   runApp(StartApp());
 }
 
