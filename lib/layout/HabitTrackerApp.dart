@@ -8,6 +8,8 @@ void main() {
 enum FilterMode { Today, Weekly, Overall }
 
 class HabitTrackerApp extends StatelessWidget {
+  const HabitTrackerApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -43,10 +45,11 @@ class Habit {
     int streak = 0;
     final all = yearData.expand((w) => w).toList().reversed;
     for (var v in all) {
-      if (v > 0)
+      if (v > 0) {
         streak++;
-      else
+      } else {
         break;
+      }
     }
     return streak;
   }
@@ -62,6 +65,8 @@ class Habit {
 }
 
 class HabitsScreen extends StatefulWidget {
+  const HabitsScreen({super.key});
+
   @override
   _HabitsScreenState createState() => _HabitsScreenState();
 }
@@ -266,7 +271,7 @@ class _HabitsScreenState extends State<HabitsScreen> {
 
       case FilterMode.Overall:
       default:
-        return Container(
+        return SizedBox(
           height: 120,
           child: CustomPaint(
             painter: CommitGridPainter(habit: h, cellSize: 12, spacing: 2),
@@ -415,7 +420,7 @@ class _HabitsScreenState extends State<HabitsScreen> {
                           ),
                         ),
                         SizedBox(height: 12),
-                        Container(
+                        SizedBox(
                           height: 120,
                           child: GridView.count(
                             crossAxisCount: 6,

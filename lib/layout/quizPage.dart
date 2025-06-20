@@ -119,56 +119,56 @@ class _QuizPageState extends State<QuizPage> {
                 ),
                 Spacer(flex: 2),
                 GestureDetector(
-                  child: answerCard(
-                    answers[0],
-                    context,
-                    answer: answersValidate[0],
-                  ),
                   onTap:
                       isAnswering
                           ? null
                           : () {
                             validateAndShowQuestion(0);
                           },
+                  child: answerCard(
+                    answers[0],
+                    context,
+                    answer: answersValidate[0],
+                  ),
                 ),
                 GestureDetector(
-                  child: answerCard(
-                    answers[1],
-                    context,
-                    answer: answersValidate[1],
-                  ),
                   onTap:
                       isAnswering
                           ? null
                           : () {
                             validateAndShowQuestion(1);
                           },
+                  child: answerCard(
+                    answers[1],
+                    context,
+                    answer: answersValidate[1],
+                  ),
                 ),
                 GestureDetector(
-                  child: answerCard(
-                    answers[2],
-                    context,
-                    answer: answersValidate[2],
-                  ),
                   onTap:
                       isAnswering
                           ? null
                           : () {
                             validateAndShowQuestion(2);
                           },
+                  child: answerCard(
+                    answers[2],
+                    context,
+                    answer: answersValidate[2],
+                  ),
                 ),
                 GestureDetector(
-                  child: answerCard(
-                    answers[3],
-                    context,
-                    answer: answersValidate[3],
-                  ),
                   onTap:
                       isAnswering
                           ? null
                           : () {
                             validateAndShowQuestion(3);
                           },
+                  child: answerCard(
+                    answers[3],
+                    context,
+                    answer: answersValidate[3],
+                  ),
                 ),
                 Spacer(),
               ],

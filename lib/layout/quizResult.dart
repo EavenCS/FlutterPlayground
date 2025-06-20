@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class QuizResult extends StatelessWidget {
   final int userPoints;
 
-  const QuizResult({Key? key, required this.userPoints}) : super(key: key);
+  const QuizResult({super.key, required this.userPoints});
 
   @override
   Widget build(BuildContext context) {
